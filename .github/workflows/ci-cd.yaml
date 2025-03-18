@@ -9,11 +9,11 @@ on:
         branches: [ release ]
 jobs:
     test:
-        name: unit teating
+        name: unit testing
         runs-on: ubuntu-latest
         steps:
           - name: checkout
-            uses: actions/setup-node@v4
+            uses: actions/checkout@v4
           - name: Setup nodejs
             uses: actions/setup-node@v4
             with:
